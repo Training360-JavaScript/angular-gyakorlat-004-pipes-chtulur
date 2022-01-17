@@ -6,6 +6,7 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { FilterPipe } from './pipe/filter.pipe';
 import { SorterPipe } from './pipe/sorter.pipe';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -15,10 +16,8 @@ import { SorterPipe } from './pipe/sorter.pipe';
     FilterPipe,
     SorterPipe,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [CommonModule, BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
